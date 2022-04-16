@@ -1,0 +1,218 @@
+body {
+    
+}
+
+.menu {
+    background-color: transparent !important;
+    color: white !important;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    overflow: hidden;
+    // width: 100vw;
+    // height: 100vh;
+    .body{
+      background-color: black;
+      // width: 100vw;
+    // height: 100vh;
+      .page{
+        width: 100vw;
+    // height: 100vh;
+      }
+    }
+}
+  
+.one{
+width: 100vw;
+height: 100vh;
+// margin: 0 auto;
+.videoTag {
+    height: 100%;
+    width: 100%;
+    // width: inherit;
+    line-height: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0)
+}
+}
+.two{
+width: 100vw;
+height: 100vh;
+// background: linear-gradient(135deg, #c1ff32 1%, #ffa600 100%);
+background-color: black;
+}
+// .three{
+// width: 100vw;
+// height: 100vh;
+// background: black;//linear-gradient(135deg, #32ff43 1%, #00ffd5 100%);
+// }
+.thumbs{
+position: fixed;
+top: 50vh;
+right: 0;
+height: fit-content;
+width: fit-content;
+background: transparent;
+.thumb{
+    margin-right: 20px;
+    margin-bottom: 5px;
+    height: 10px;
+    width: 10px;
+    // background-color: white;
+    filter: blur(1px);
+    border: solid 1px;
+    border-radius: 50%;
+}
+}
+.active{
+background-color: white;
+}
+  
+.specialDesign {
+    height: 100vh;
+    padding-top:15vh;
+    
+    .specialContent {
+        padding-left: 20px;
+        .specialTitle {
+            color: white;
+            font-size: 30px;
+            
+        }
+        .specialSubTitle {
+            color: white;
+            font-size: 18px;
+            
+        }
+        .card {
+          // card base style
+          height: 28vh;
+          display: flex;
+          align-items: center;
+        flex-direction: column;
+            border-radius: 2px;
+            justify-content: center;
+          //
+            @keyframes TransitioningBackground {
+                0% {
+                  background-position: 1% 0%;
+                }
+                50% {
+                  background-position: 99% 100%;
+                }
+                100% {
+                  background-position: 1% 0%;
+                }
+            }
+
+            // for shine & gradient effects to work
+  position: relative;
+  overflow: hidden;
+  // for background color shift
+  background-image: (linear-gradient(270deg, #a2ceff, #42579a));
+  background-size: 400% 400%;
+  animation: TransitioningBackground 15s ease infinite;
+  // to ease the button growth on hover
+  transition: 0.7s;
+  // psuedo-element shine animation left side
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+
+  // psuedo-element shine animation right side
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg);
+  }
+
+  // grow button and change background gradient on hover
+  &:hover {
+    background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+    transform: scale(1.1);
+    cursor: pointer;
+
+    // psuedo-elements for right- and left-side shine animations
+    &::before,
+    &::after {
+      transform: translateX(300px) skewX(-15deg);
+      transition: 0.7s;
+    }
+  }
+            .cardIcon {
+                padding-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            .cardTitle {
+                font-size: 15px;
+                text-align: center;
+                color: white;
+                padding-top: 1vh;
+            }
+        }
+        .card:hover {
+            //background-color: white;
+            cursor: pointer;
+        }
+    }
+    
+    .perspectiveWrapper {
+        padding-top: 40px;
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        
+        .container {
+          width: 48vw;        
+            transform: scale3d(1, 1, 1) rotateX(7deg) rotateY(329deg) rotateZ(1deg);        
+            img {
+                width: 95%;
+            }
+        }  
+    }
+}
+
+.navigationContent {
+    padding-top: 50px;
+    .navigationContentDeveloper {
+        img{
+            border-radius: 50%;
+        }
+        .cardTitle{
+            font-size: 15px;
+            color: white;
+            text-align: center;
+        }
+        .wallpaper{
+            width: 95%;
+            height: 100%;
+            text-align: center;
+            margin-top: 10%;
+        }
+        .text{
+            text-align: center;
+        }
+    }
+}

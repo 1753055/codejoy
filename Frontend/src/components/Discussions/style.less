@@ -1,0 +1,31 @@
+@import '~antd/es/style/themes/default.less';
+
+.vote{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+}
+.vote-count{
+  padding-left: 0px;
+}
+.discard-button:hover,
+.discard-button:active{
+  box-shadow: 0 4px 12px rgba(245, 26, 11, 0.4);
+}
+.comment-reply{
+  @media only screen and (min-width: @screen-md){
+    width: 62vw;
+  }
+  @media only screen and (max-width: @screen-md){
+    width: 72vw;
+  }
+}
+.ant-comment-inner{
+  padding-bottom: 0px;
+}
+.ant-divider{
+  margin: 16px 0;
+}

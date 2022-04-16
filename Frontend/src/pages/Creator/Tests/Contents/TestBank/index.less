@@ -1,0 +1,69 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  height: calc(100vh - 48px - 92px - 20px - 54px);
+  overflow-y: scroll;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    .button {
+      margin-right: 30px;
+    }
+  }
+  .content {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .searchBar {
+    width: 475px;
+  }
+  .modal {
+    width: 10px;
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  .formInfo {
+    width: 70%;
+    margin-right: 20px;
+  }
+  .uploadContainer {
+    width: 30%;
+    .avatar-uploader {
+      width: 1500px;
+      height: 1500px;
+    }
+  }
+}
+
+.questionContainer {
+  background-color: white;
+}
+
+.multipleChoiceContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #011831;
+  border-bottom: 1px solid gray;
+}
+
+.testContainer {
+  height: calc(100vh - 48px - 92px - 30px - 44px);
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .searchBar {
+      display: flex;
+      flex: 1;
+    }
+  }
+}

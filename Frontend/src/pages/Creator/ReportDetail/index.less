@@ -1,0 +1,41 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  height: calc(100vh - 48px - 92px);
+  overflow-y: scroll;
+  .header {
+    background-color: #35577a;
+    .headerLeft {
+      width: 50%;
+      padding-top: 20px;
+      color: white;
+      background-color: #315ea1;
+      border-radius: 0px 0px 100px 0px;
+      .menu {
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        border-bottom: 0px;
+      }
+      h1 {
+        margin-left: 20px;
+        color: white;
+        font-size: 32px;
+      }
+      h2 {
+        margin-left: 20px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    .header {
+      .headerLeft {
+        width: 100%;
+      }
+    }
+  }
+}

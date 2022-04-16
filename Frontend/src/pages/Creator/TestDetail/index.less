@@ -1,0 +1,107 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  height: calc(100vh - 48px - 92px);
+  padding: 20px;
+  overflow: scroll;
+  .left {
+    width: 30%;
+    background-color: white;
+    .testName {
+      padding: 20px 10px 10px 20px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .editContainer {
+      display: flex;
+
+      padding: 0px 20px;
+    }
+    img {
+      width: 100%;
+    }
+    .otherInfo {
+      padding: 0px 20px;
+    }
+  }
+  .right {
+    width: 70%;
+    margin-left: 20px;
+    .questionContainer {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: white;
+      position: relative;
+      .question {
+        font-weight: bold;
+      }
+      .mark {
+        position: absolute;
+        top:2px;
+        right:10px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+      }
+      .multipleChoiceContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        padding-bottom: 10px;
+        color: white;
+        font-weight: bold;
+        background-color: #011831;
+        border-bottom: 1px solid gray;
+      }
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.modal {
+  .listGroup {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid white;
+  }
+}
+
+.modalTitle {
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: #ececec;
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    overflow: scroll;
+    .left {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    .right {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    .right {
+      height: 100%;
+      overflow: scroll;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '~antd/es/style/themes/default.less';
+.container{
+  
+  @media only screen and (min-width: @screen-md){
+    flex-direction: row;
+  }
+  @media only screen and (max-width: @screen-md){
+    flex-direction: column-reverse;
+  }
+}
+.info{
+  padding: 0px 14px 24px 2px;
+  max-width: fit-content;
+  @media only screen and (max-width: @screen-md){
+    padding-left: 24px;
+  }
+}
+.tabs{
+
+
+  max-width: 100%;
+  padding: 0px 16px 0px 24px;
+  // height: 300px;
+  margin-bottom: 24px;
+}
+.tabs > .custom .ant-tabs-content {
+  // height: 120px;
+  margin-top: -16px;
+}
+.tabs > .custom .ant-tabs-content > .ant-tabs-tabpane {
+  box-shadow: 5px 10px;
+  padding: 16px;
+  // min-height: 360px;
+  background: #fff;
+}
+.tabs > .custom > .ant-tabs-nav::before {
+  display: none;
+}
+.tabs > .custom .ant-tabs-tab,
+[data-theme='compact'] .tabs > .custom .ant-tabs-tab {
+  font-weight: bold;
+  background: transparent;
+  border-color: transparent;
+}
+.tabs > .custom .ant-tabs-tab-active,
+[data-theme='compact'] .tabs > .custom .ant-tabs-tab-active {
+  font-weight: bold;
+  border-radius: 5px 5px 0px 0px;
+  background: #fff;
+  border-color: #fff;
+}
+
+[data-theme='compact'] .tabs > .custom .ant-tabs-content {
+  height: 120px;
+  margin-top: -8px;
+}
+[data-theme='dark'] .tabs > .custom .ant-tabs-tab {
+  background: transparent;
+  border-color: transparent;
+}
+// [data-theme='dark'] .tabs > .custom .ant-tabs-content > .ant-tabs-tabpane {
+//   background: #141414;
+// }
+// [data-theme='dark'] .tabs > .custom .ant-tabs-tab-active {
+//   background: #141414;
+//   border-color: #141414;
+// }
+
